@@ -1,5 +1,29 @@
-#### -  Recursion, Referential Transparency, Lazy Evaluation) 
+functools.lru_cache:
 
+    Caches function call results to improve performance (especially in recursion).
+
+functools.singledispatch:
+
+    Enables function overloading based on the type of the first argument.
+
+functools.wraps:
+
+    Preserves metadata when writing decorators.
+
+---
+- **First-Class Functions:** Functions ko value ki tarah treat karna.  
+- **Higher-Order Functions:** Functions jo dusre functions ko argument ke roop mein lete hain ya return karte hain.  
+- **Closures:** Inner functions jo outer function ke variables ko yaad rakhte hain.  
+- **Anonymous Functions (Lambdas):** Naam ke baghair short functions.  
+- **Partial Functions:** Kuch arguments fix karke naye functions banana.  
+- **Pure Functions:** No side-effects, same input → same output.  
+- **Currying:** Multi-argument functions ko sequential single-argument functions mein todna.  
+- **Built-in HOFs:** Map, Filter, Reduce.  
+- **Immutability:** Data ko modify nahi karna, naye objects banana.  
+- **Function Composition:** Functions ko combine karke naya function banana.  
+- **Recursion, Referential Transparency, Lazy Evaluation:** Optional advanced FP concepts.
+
+---
 
 ### **🔹 Phase 1: Basic Concepts & Foundations (Weeks 1-4)**
 
