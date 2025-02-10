@@ -1,3 +1,6 @@
+#### -  Recursion, Referential Transparency, Lazy Evaluation) 
+
+
 ### **🔹 Phase 1: Basic Concepts & Foundations (Weeks 1-4)**
 
 **Focus:** Functional programming ke basic concepts aur fundamental paradigms samajhna.
