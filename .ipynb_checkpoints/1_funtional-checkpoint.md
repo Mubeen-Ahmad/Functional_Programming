@@ -6,9 +6,6 @@ functools.singledispatch:
 
     Enables function overloading based on the type of the first argument.
 
-functools.wraps:
-
-    Preserves metadata when writing decorators.
 
 ---
 - **First-Class Functions:** Functions ko value ki tarah treat karna.  
