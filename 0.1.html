@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7564,7 +7565,7 @@ Agar aap function ke andar immutable object ko change karne ki koshish karte hai
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
 
-<span class="k">def</span> <span class="nf">change</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">change</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>        <span class="c1"># Yahan x ko reassign kiya gaya hai, jo naya object banata hai</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>     <span class="c1"># 0 print hoga</span>
     <span class="k">return</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 0 ka naya id return karega</span>
@@ -7653,80 +7654,6 @@ Agar aap function ke andar immutable object ko change karne ki koshish karte hai
 </body></div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=39cbb7a4-fd3f-4c1f-848c-98f326076f16">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Example 2 (Immutable value same rehti hai):</strong></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=58188014-5e63-4258-a60b-f221b225528f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">unchange</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Agar x pehle se 10 hai, </span>
-            <span class="c1"># to Python aksar wahi immutable object reuse karta hai.</span>
-    
-    <span class="k">return</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3c67bf71-a08f-4604-9d88-359fb7687c1e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">unchange</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>128114205131280 10
-(128114205131280, 10)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67c7fb5f-1810-406e-87d2-a27c26ddd75e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<body style="font-family: Sans-serif;">
-<div style="color: black; font-size: 15px; font-style: oblique; text-shadow: 0 0 3px white, 0 0 1px black; padding: 20px;">
-<ul>
-<li>Agar aap immutable object (jaise integer 10) ko function ke andar phir se wahi value assign karte hain, to Python aksar ussi object ko reuse karta hai (interning), isliye id same rahegi.</li>
-</ul>
-</div>
-</body></div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b53b3da3-535b-4324-99b8-181edebdb4cb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7753,7 +7680,7 @@ Kyunki dono (caller aur function) same object ko point karte hain, isliye change
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">change</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">change</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     
     <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">""</span>   <span class="c1"># List ke pehle element ko modify kar rahe hain</span>
     
@@ -7871,6 +7798,6 @@ Kyunki dono (caller aur function) same object ko point karte hain, isliye change
 </body></div>
 </div>
 </div>
-</div></div></div></div></div></div></div></main>
+</div></div></div></div></div></div></main>
 </body>
 </html>

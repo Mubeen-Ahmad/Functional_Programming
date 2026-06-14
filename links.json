@@ -1,0 +1,170 @@
+{
+    "courses": {
+        "functional_programming": {
+            "topic_name": "Functional Python Programming",
+            "description": "Master the art of writing clean, efficient code using functional paradigms.",
+            "url": "functional_programming.html",
+            "subtopics": {
+                "Function": {
+                    "topic_name": "Function",
+                    "description": "- What is Function<br>- What is return Statement<br>- What is Nested Function<br>- *args and  **kwargs<br>- default Argument",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/0.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/0.html"
+                },
+                "refference": {
+                    "topic_name": "Pass By Value or Refference",
+                    "description": "- Immutable Object (Support as Pass by Value)<br>- mutable Object (Support as Pass by Refference)",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/0.1.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/0.1.html"
+                },
+                "lambda_doc": {
+                    "topic_name": "Lambda Function and Docstring",
+                    "description": "- lambda Anonmyous<br>- What is Docstring<br>- What should be included in a docstring?",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/0.2.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/0.2.html"
+                },
+                "namespace": {
+                    "topic_name": "Namespaces LEGB Rule",
+                    "description": "- Local Scope<br>- Global Scope<br>- Enclosing / Non Local Scope<br>- Built-In Scope<br>- local and global keyword<br>- locals and globals Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/0.3.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/0.3.html"
+                },
+                "iter_iterable": {
+                    "topic_name": "Iterables and Iterators",
+                    "description": "- What is Iterable (Sequential Data Types)<br>- Iterators (Convert iterable into Iterator for iterate)<br>- iter() Function (convert iterable to iterator)<br>- next() Function (Iterations)<br>- Sequential Process (User Single Value at 1 time)<br>-  Is All Iterables are Iterators ? (No)<br>- Identify Iterators (with collections.abc.Iterable with isinstance function)<br>- itertools.chain() Method<br>- itertools.permutations() Method<br>- itertools.combinations() Method<br>- itertools.accumulate() Method<br>- itertools.cycle() Method<br>- zip Function<br>- enumerate() Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/10.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/10.html"
+                },
+                "Generators": {
+                    "topic_name": "Generators",
+                    "description": "- What is Generators (Special Type of Iterator)<br>- Concept of Yield<br>- Concept of Pause and Resume<br>- Sender and Reciver Concept(.send Method)<br>- next() and .send<br>- Throw Error outside (.throw Method)<br>- Close Generator (.close Method)<br>- Normal Iterators Vs Generators<br>- Generaters Vs Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/11.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/11.html"
+                },
+                "Comprehensions ": {
+                    "topic_name": "Comprehensions ",
+                    "description": "- List Comprehensions<br>- Set Comprehensions<br>- Dictionary Comprehensions<br>- Generator Comprehensions",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/12.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/12.html"
+                },
+                "introduction": {
+                    "topic_name": "Introduction of Functional Programming",
+                    "description": "- An overview of Functional programming principles.<br>- Imperative vs Functional Paradigm<br>- Advantages",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/1.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/1.html"
+                },
+                "pure_and_impure_functions": {
+                    "topic_name": "Pure & Impure Function",
+                    "description": "- Pure Function<br>- Impure (Normal) Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/2.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/2.html"
+                },
+                "higher_order_functions": {
+                    "topic_name": "First Class & Higher Order Function",
+                    "description": "- First Class Function<br>- Assign Function in the Variable<br>- Higher Order Function<br>- Pass Function as a Argument and Call Function With The Argument<br>- Function Return Other Function and Call it Outside",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/3.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/3.html"
+                },
+                "close_function": {
+                    "topic_name": "Closure Function",
+                    "description": "- What is Closure Function<br> - All Clouser Function is also a Higher Order Function<br>- But All Higher Order Function are Not a Clouser Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/4.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/4.html"
+                },
+                "bulitin_hof1": {
+                    "topic_name": "Bulit-In Higher Order Function 1 (Functools) ",
+                    "description": "- Partial Function (Fix Argument Value)<br>- Reduce Function (Single Value Return)<br>- Map Function(Apply operation)<br>- Filter Function(Select True Value)<br>- cmp_to_key Function (Use with Sorted as a Custom Logic)",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/5.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/5.html"
+                },
+                "dec": {
+                    "topic_name": "Decorators ",
+                    "description": "- What is Decorators<br>- @ Syntax<br>- All Decorators is a HOF<br>- But All HOF are Not a Decorators<br>- Where we Used Decorators<br>- Multiple Decorators<br>- Parameters in Decorators (Multi-Level Used only if Parameter required directly in Decorators)<br>- Arags and Kwargs in Decorators Function",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/6.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/6.html"
+                },
+                "bulitin_hof2": {
+                    "topic_name": "Bulit-In Higher Order Function 2 (Functools) ",
+                    "description": "- wraps Function (Copy Metadata of Orignal Function)<br>- singledispatch Function (Change the Function Behavior for Different DataType)<br>- lru_cache Function(Store Recently Use Values)",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/7.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/7.html"
+                },
+                "topic8": {
+                    "topic_name": "Currying and Composition",
+                    "description": "- Curring (Just Divide Multiple Arguments into Nested Functions)<br>- Composition (Just Pass Functions into Single Function and Create a New Function)<br>- Concept of HOF<br>- Concept of  Closure<br>- Concept of Decorator<br>- Concept of Currying<br>- Concept of Composition",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/8.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/8.html"
+                },
+                "topic9": {
+                    "topic_name": "Recursion",
+                    "description": "- What is Recursion<br>- Base Case and Recursive Case<br>- Direct Recursion<br>- InDirect Recursion<br>- Tail Recursion<br>- Tree Recursion<br>- Nested Recursion<br>- Common Mistakes in Recursion",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/9.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/9.html"
+                },
+                "project1": {
+                    "topic_name": "Mini Project",
+                    "description": "- Create a Login System<br>- Manage Tokens and Sessions<br>- Manage Validations With Decorators<br>- Use Generator For Send a Messages",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/Functional_Programming/blob/main/project1.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/Functional_Programming/blob/main/project1.html"
+                }
+            },
+            "html": "functional_programming.html"
+        },
+        "dsa": {
+            "topic_name": "DSA Python",
+            "description": "Explore DSA that provides efficient ways to store and process data, covering sorting, searching, recursion, graphs, trees, and optimization algorithms.",
+            "url": "dsa.html",
+            "subtopics": {
+                "t1": {
+                    "topic_name": "Scalar, Vector, Array, and Tensors",
+                    "description": "- What is Scalar (Single Value)<br>- What is Vector (1-D)<br>- What is Array (n-D)<br>- What is Tensors (n-D)",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/1.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/1.html"
+                },
+                "t2": {
+                    "topic_name": "Data Structures and Types",
+                    "description": "- Primitive and Non- Primitive Data Types<br>- Linear Data Structure<br>- Non Linear Data Structures",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/2.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/2.html"
+                },
+                "t3": {
+                    "topic_name": "Arrays Data Structures",
+                    "description": "- Arrays Data Structures<br>- Linear Data Structure<br>- Contiguous Memory Address<br>- Fix (Static) and Dynamic Size Array<br>- Homogeneous vs Non-Homogeneous",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/3.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/3.html"
+                },
+                "t4": {
+                    "topic_name": "Arrays CRUD Operations",
+                    "description": "- Create Array (Insertion in Array)<br>- Read (Traversal in Array)<br>- Update (Modification in Array)<br>- Delete (Remove an Element)",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/4.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/4.html"
+                },
+                "t5": {
+                    "topic_name": "Linked List",
+                    "description": "- What is Linked List(Connect Two or More Nodes)<br>- Static and Dynamic Linked list<br>- Node , Head , Tail<br>-  Example 1 Inserting Node at Start<br>- Example 2 Inserting Node at the End<br>- Example 3 Track and Count Nodes<br>- Example 4 Inserting Node at the Mid",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/5.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/5.html"
+                },
+                "t6": {
+                    "topic_name": "Types of Linked List",
+                    "description": "- Single<br>- Double<br>- Circular",
+                    "url": "https://nbviewer.org/github/Mubeen-Ahmad/DSA/blob/main/6.ipynb",
+                    "html": "https://htmlpreview.github.io/?https://github.com/Mubeen-Ahmad/DSA/blob/main/6.html"
+                }
+            },
+            "html": "dsa.html"
+        },
+        "deep_learning": {
+            "topic_name": "Deep Learning",
+            "description": "Dive into neural networks and cutting-edge AI techniques.",
+            "url": "deep_learning.html",
+            "html": "deep_learning.html"
+        },
+        "python": {
+            "topic_name": "Python for Data Science",
+            "description": "Enhance your Python skills for data analysis and visualization.",
+            "url": "python.html",
+            "html": "python.html"
+        }
+    }
+}
